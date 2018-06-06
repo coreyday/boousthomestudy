@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animal Types</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div>
+    <h1>Our Favorite Animal List</h1>
+    <p>When You enter the name of any animal of your choice, we let    you know if that animal
+         exists in our database.<br>Cheers!!!</p>
+    </div>
+
+    <div>
+        <script>
+            var animalList = ['Lion','Cat','Cheetah','Snake','Antelope','Octopus','Eagle','Cockroach','Mosquitoe',
+            'Crocodile','Lizard','Rat','Monkey','Elephant','Squirrel','Goat','Bat','Chimpanzee','Frog','Leopard'];
+            var name = prompt('Please enter the name of an animal');
+                if (animalList.includes(name)) {
+                alert('Lovely!!!' + ' ' + name + ' ' + 'exists on the list of animals');
+            }   else {
+                alert('Oooops' + ' ' + name + ' ' + "doesn't exist on the list of animals");
+            };
+        </script>
+    </div>
+</body>
+
+</html>
